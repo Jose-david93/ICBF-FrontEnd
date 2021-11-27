@@ -41,7 +41,7 @@
             ],
             "stylePreprocessorOptions": {
               "includePaths": [
-                "src/app/shared/styles"
+                "src/assets/styles"
               ]
             }
           },
