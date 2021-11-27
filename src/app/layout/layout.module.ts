@@ -4,6 +4,7 @@ import { ContentComponent } from './components/content/content.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { RouterModule } from '@angular/router';
+import { ContentAuthComponent } from './components/content-auth/content-auth.component';
 
 
 
@@ -11,7 +12,8 @@ import { RouterModule } from '@angular/router';
   declarations: [
     ContentComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    ContentAuthComponent
   ],
   imports: [
     CommonModule,
