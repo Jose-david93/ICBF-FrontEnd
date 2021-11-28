@@ -19,4 +19,9 @@ export class AuthService {
     this.router.navigate(['/login']);
   }
 
+  logoutRegister() {
+    sessionStorage.removeItem('token');
+    sessionStorage.removeItem('username');
+    this.router.navigate(['/register']);
+  }
 }
