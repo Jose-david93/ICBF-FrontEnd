@@ -26,7 +26,8 @@
       "@content/*": ["src/app/layout/components/content/*"],
       "@content-auth/*": ["src/app/layout/components/content-auth/*"],
       "@home/*": ["src/app/feature/home/*"],
-      "@login/*": ["src/app/feature/login/*"]
+      "@login/*": ["src/app/feature/login/*"],
+      "@powerbi/*": ["src/app/feature/powerbi/*"]
     }
   },
   "angularCompilerOptions": {

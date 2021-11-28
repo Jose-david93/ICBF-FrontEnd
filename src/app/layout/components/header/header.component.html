@@ -1,6 +1,8 @@
 <div class="app-header header-shadow">
     <div class="app-header__logo">
+      <a [routerLink]="['/home']">
         <div class="logo-src"></div>
+      </a>
     </div>
     <div class="app-header__mobile-menu">
         <div>
@@ -39,7 +41,7 @@
                             </div>
                         </div>
                         <div class="container">
-                            <button type="button" class="dropdown-item">Option menu 1</button>
+                            <button type="button" class="dropdown-item" [routerLink]="['/powerbi']">Power BI</button>
                             <button type="button" class="dropdown-item">Option menu 2</button>
                             <button type="button" class="dropdown-item">Option menu 3</button>
                             <button type="button" class="dropdown-item">Option menu 4</button>
