@@ -8,11 +8,11 @@ import { CoreModule } from './core/core.module';
 import { LayoutModule } from './layout/layout.module';
 import { LoginComponent } from './feature/login/components/login/login.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { PowerbiComponent } from './feature/powerbi/components/powerbi/powerbi.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent
   ],
   imports: [
     BrowserModule,

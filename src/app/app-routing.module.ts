@@ -19,6 +19,11 @@ const routes: Routes = [
         loadChildren: () => import('@home/home.module').then(m => m.HomeModule),
         canActivate: [Guard]
       },
+      {
+        path: 'powerbi',
+        loadChildren: () => import('@powerbi/powerbi.module').then(m => m.PowerbiModule),
+        canActivate: [Guard]
+      }
     ]
   },
   {
