@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import * as $ from 'jquery';
+import { AuthService } from 'src/app/core/services/auth/auth.service';
 
 @Component({
   selector: 'app-header',
@@ -8,7 +9,9 @@ import * as $ from 'jquery';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private authService: AuthService
+  ) { }
 
   ngOnInit(): void {
     this.searchInit();
@@ -18,10 +21,14 @@ export class HeaderComponent implements OnInit {
     $(".search-icon").click(function () {
       $(this).parent().parent().addClass("active");
     });
-  
+
     $(".search-wrapper .btn-close").click(function () {
       $(this).parent().removeClass("active");
     });
+  }
+
+  logout() {
+    this.authService.logout();
   }
 
 }

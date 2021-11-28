@@ -11,40 +11,69 @@
                               <span class="text-success">few seconds</span> to create your account</span>
                       </h4>
                       <div>
-                          <form class="">
-                              <div class="">
+                          <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+                              <div class="row">
                                   <div class="col-md-6">
                                       <div class="position-relative mb-3">
                                           <label for="exampleEmail" class="form-label">
                                               <span class="text-danger">*</span> Email
                                           </label>
-                                          <input name="email" id="exampleEmail"
+                                          <input name="email" id="exampleEmail" formControlName="username"
                                               placeholder="Email here..." type="email" class="form-control">
                                       </div>
                                   </div>
                                   <div class="col-md-6">
                                       <div class="position-relative mb-3">
-                                          <label for="exampleName" class="form-label">Name</label>
-                                          <input name="text" id="exampleName"
+                                          <label for="exampleName" class="form-label">
+                                            <span class="text-danger">*</span> Name</label>
+                                          <input name="text" id="exampleName" formControlName="name"
                                               placeholder="Name here..." type="text" class="form-control">
                                       </div>
                                   </div>
+                                  <div class="col-md-6">
+                                    <div class="position-relative mb-3">
+                                        <label for="exampleName" class="form-label">
+                                          <span class="text-danger">*</span> Last Name</label>
+                                        <input name="text" id="exampleName" formControlName="lastname"
+                                            placeholder="Last Name here..." type="text" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                  <div class="position-relative mb-3">
+                                      <label for="exampleName" class="form-label">
+                                        <span class="text-danger">*</span> Gender</label>
+                                      <select name="gender" id="gender" class="form-control" formControlName="gender">
+                                        <option value="">- select gender -</option>
+                                        <option value="Male">Male</option>
+                                        <option value="Female">Female</option>
+                                        <option value="Other">Other</option>
+                                      </select>
+                                  </div>
+                              </div>
+
+                              <div class="col-md-6">
+                                <div class="position-relative mb-3">
+                                    <label for="exampleName" class="form-label">
+                                      <span class="text-danger">*</span> Birthday</label>
+                                    <input name="text" id="exampleName" formControlName="dateOfBirth"
+                                        placeholder="Birthday here..." type="date" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                              <div class="position-relative mb-3">
+                                  <label for="exampleName" class="form-label">
+                                    <span class="text-danger">*</span> City</label>
+                                  <input name="text" id="exampleName" formControlName="city"
+                                      placeholder="City here..." type="text" class="form-control">
+                              </div>
+                          </div>
                                   <div class="col-md-6">
                                       <div class="position-relative mb-3">
                                           <label for="examplePassword" class="form-label">
                                               <span class="text-danger">*</span> Password
                                           </label>
-                                          <input name="password" id="examplePassword"
+                                          <input name="password" id="examplePassword" formControlName="password"
                                               placeholder="Password here..." type="password" class="form-control">
-                                      </div>
-                                  </div>
-                                  <div class="col-md-6">
-                                      <div class="position-relative mb-3">
-                                          <label for="examplePasswordRep" class="form-label">
-                                              <span class="text-danger">*</span> Repeat Password
-                                          </label>
-                                          <input name="passwordrep" id="examplePasswordRep"
-                                              placeholder="Repeat Password here..." type="password" class="form-control">
                                       </div>
                                   </div>
                               </div>
