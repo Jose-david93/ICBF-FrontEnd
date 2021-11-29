@@ -17,6 +17,6 @@ $FLAGKIT_FOLDER_PATH: '../../vendors/flagkit-web/svgs/';
 
 @each $country-code in $FLAGKIT_COUNTRY_CODES {
   .#{$country-code} {
-    background: url(#{$FLAGKIT_FOLDER_PATH}#{$country-code}.svg) no-repeat;
+    // background: url(#{$FLAGKIT_FOLDER_PATH}#{$country-code}.svg) no-repeat;
   }
 }
