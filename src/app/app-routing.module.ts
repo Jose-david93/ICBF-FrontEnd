@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { ContentAuthComponent } from '@content-auth/content-auth.component';
 import { ContentComponent } from '@content/content.component';
+import { Guard } from './core/guard/guard';
 
 const routes: Routes = [
   {
@@ -15,8 +16,14 @@ const routes: Routes = [
       },
       {
         path: 'home',
-        loadChildren: () => import('@home/home.module').then(m => m.HomeModule)
+        loadChildren: () => import('@home/home.module').then(m => m.HomeModule),
+        canActivate: [Guard]
       },
+      {
+        path: '',
+        loadChildren: () => import('@reports/reports.module').then(m => m.ReportsModule),
+        canActivate: [Guard]
+      }
     ]
   },
   {
