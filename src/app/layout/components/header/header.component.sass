@@ -3,9 +3,24 @@
 .header
     width: 100%
     &--top
-        padding: 20px
-        display: flex
-        justify-content: space-between
-            
+        .content
+            padding: 20px
+            display: flex
+            justify-content: space-between
     &--bottom
         background-color: $secondary
+        @media screen and (min-width: 768px)
+            .content
+                display: flex
+                justify-content: space-between
+    &--search
+        margin-top: 3px
+
+@media screen and (max-width: 768px)
+    .nav
+        &--list
+            width: 100%
+        &--item
+            display: block
+        .subnav--list
+            display: none !important

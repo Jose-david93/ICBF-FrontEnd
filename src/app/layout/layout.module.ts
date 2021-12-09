@@ -5,6 +5,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { RouterModule } from '@angular/router';
 import { ContentAuthComponent } from './components/content-auth/content-auth.component';
+import { NavComponent } from './components/header/nav/nav.component';
 
 
 
@@ -13,7 +14,8 @@ import { ContentAuthComponent } from './components/content-auth/content-auth.com
     ContentComponent,
     HeaderComponent,
     FooterComponent,
-    ContentAuthComponent
+    ContentAuthComponent,
+    NavComponent
   ],
   imports: [
     CommonModule,
