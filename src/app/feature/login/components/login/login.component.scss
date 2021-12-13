@@ -1,7 +1,41 @@
 .content_section {
-  position: absolute;
-  bottom: 0;
-  top: 0;
-  left: 0;
-  right: 0;
+  width: 100%;
+  &--image_content{
+    padding: 0px;
+  }
+  &--image{
+    width: 98%
+  }
 }
+
+.content_inputs {
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 20px;
+  &--input {
+    border: 2px solid #383838;
+    border-radius: 0px;
+  }
+  &--input:focus {
+    box-shadow: none !important;
+  }
+  &--button{
+    width: 90%;
+    border: 1px solid #383838;
+    border-radius: 2.3rem;
+    background-color: #383838;
+  }
+  &__black, &__black:hover{
+    color: #383838;
+  }
+
+}
+
+.title {
+  &--h1 {
+    font-weight: 900;
+    color: #383838;
+  }
+}
+
+

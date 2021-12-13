@@ -1,3 +1,47 @@
 .card {
   border: 0px !important;
 }
+
+.title{
+  font-weight: 900;
+}
+
+.content_inputs {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 20px;
+  &--input {
+    border: 2px solid #383838;
+    border-radius: 0px;
+  }
+  &--input:focus {
+    box-shadow: none !important;
+  }
+  &--button{
+    width: 84%;
+    border: 1px solid #383838;
+    border-radius: 2.3rem;
+    background-color: #383838;
+  }
+  &__black, &__black:hover{
+    color: #383838;
+  }
+
+}
+
+.content_section {
+  width: 100%;
+  &--image_content{
+    padding: 0px;
+  }
+  &--image{
+    width: 98%
+  }
+}
+
+.title {
+  &--h1 {
+    font-weight: 900;
+    color: #383838;
+  }
+}

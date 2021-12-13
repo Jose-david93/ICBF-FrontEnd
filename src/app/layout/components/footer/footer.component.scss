@@ -1,0 +1,13 @@
+.content_footer{
+  background-color: #025dc0;
+  &--row{
+    padding-top: 25px;
+  }
+  &--image{
+    width: 70%;
+    display: block;
+  }
+  &--text{
+    font-size: 11px;
+  }
+}
