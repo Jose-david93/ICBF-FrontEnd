@@ -10,4 +10,16 @@
   &--text{
     font-size: 11px;
   }
+  &--span{
+    margin-left: 10px;
+    vertical-align: super;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .content_footer{
+    &--image{
+      width: 30%;
+    }
+  }
 }
