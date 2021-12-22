@@ -3,9 +3,15 @@
   &--row{
     padding-top: 25px;
   }
-  &--image{
-    width: 70%;
-    display: block;
+  &--image-content{
+    width: 100%;
+    margin-bottom: 30px;
+    &--image-gov{
+      width: 100%;
+    }
+    &--image-coco{
+      width: 60%;
+    }
   }
   &--text{
     font-size: 11px;
@@ -14,6 +20,14 @@
     margin-left: 10px;
     vertical-align: super;
   }
+}
+
+a{
+  color: #fff;
+  font-weight: 600;
+  text-decoration: revert;
+  margin-left: 5px;
+  font-size: 12px;
 }
 
 @media screen and (max-width: 425px) {
