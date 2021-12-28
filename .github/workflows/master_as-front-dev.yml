@@ -52,4 +52,4 @@ jobs:
           app-name: 'AS-FRONT-DEV'
           slot-name: 'Production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_01BB42413158441B994753381A3A8BE7 }}
-          package: .
+          package: ./dist/ICBF-FrontEnd
