@@ -16,6 +16,14 @@
                 display: flex
     &--search
         margin-top: 3px
+        display: inline-block
+    &--session
+      color: $white
+      background-color: $gray
+      display: inline-block
+      margin-left: 15px
+    &--session a
+      color: $white
 .logo
   &--link
       display: inline-block
@@ -23,6 +31,33 @@
       display: inline-block
       margin-left: 12px
       vertical-align: top
+
+.btn-style
+    background-color: #4d4d4d !important
+    margin-left: -8px !important
+
+.content-banner
+    width: 100%
+    &--image
+      width: 100%
+    &--title
+      width: 1290px
+      max-width: 100%
+      margin: auto
+      align-items: center
+      position: absolute
+      bottom: 0
+      top: 32%
+      left: 0
+      right: 0
+      color: #fff
+    @media screen and (max-width: 768px)
+      &--image
+        height: 150px
+      &--title
+        top: 25%
+        left: 20px
+
 
 @media screen and (max-width: 768px)
     .nav
